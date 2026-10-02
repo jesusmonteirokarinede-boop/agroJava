@@ -68,7 +68,7 @@ public class Main {
                     System.out.printf("Média semanal de precipitação: %.2f mm", mediaChuva);
                     System.out.println("Dia com maior índice de chuva: " + dias[diaMaiorChuva] + " (" + maiorChuva + " mm)");
 
-                    System.out.println("===MAPA DE UMIDADE DO CAMPO===");
+                    System.out.println("===Mapa de umidade de campo===");
                     System.out.println("            Col 1 Col 2 Col 3 Col 4");
                     for (int i = 0; i < 4; i++) {
                         System.out.print("Talhão Linha " + (i + 1) + "");
