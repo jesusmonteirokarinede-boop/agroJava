@@ -16,7 +16,7 @@ public class Main {
         do {
             System.out.println("AgroJava - Sistema Integrado de Agronegócio");
             System.out.println();
-            System.out.print("Seja bem-vindo(a) ao AgroJava, digite qual opção deseja para prosseguir: ");
+            System.out.print("Olá! Seja bem-vindo(a) ao AgroJava, digite qual opção deseja para prosseguir: ");
             System.out.println(" 1 - Cadastrar dados (Chuvas e Umidade)");
             System.out.println(" 2 - Exibir mapa do campo e relatório de chuvas");
             System.out.println(" 3 - Relatório de alertas de irrigação");
@@ -41,7 +41,7 @@ public class Main {
                         }
                     }
                     dadosCadastrados = true;
-                    System.out.println("Os dados foram cadastrados com sucesso!");
+                    System.out.println("OS DADOS FORAM CADASTRADOS COM SUCESSO!");
                     System.out.println();
                     break;
 
@@ -68,7 +68,7 @@ public class Main {
                     System.out.printf("Média semanal de precipitação: %.2f mm", mediaChuva);
                     System.out.println("Dia com maior índice de chuva: " + dias[diaMaiorChuva] + " (" + maiorChuva + " mm)");
 
-                    System.out.println("===Mapa de umidade de campo===");
+                    System.out.println("===Mapa de Umidade de Campo===");
                     System.out.println("            Col 1 Col 2 Col 3 Col 4");
                     for (int i = 0; i < 4; i++) {
                         System.out.print("Talhão Linha " + (i + 1) + "");
@@ -91,7 +91,7 @@ public class Main {
                     for (int i = 0; i < 4; i++) {
                         for (int j = 0; j < 4; j++) {
                             if (umidade[i][j] < 30.0) {
-                                System.out.printf("ALERTA: O talhão [%d][%d] está com %.1f%% de umidade e necessita de irrigação imediata!\n",
+                                System.out.printf("ALERTA: O talhão [%d][%d] está com %.1f%% de umidade e necessita de irrigação imediata!",
                                         (i + 1), (j + 1), umidade[i][j]);
                                 alertaEncontrado = true;
                             }
@@ -104,11 +104,11 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("Sistema encerrado!");
+                    System.out.println("SISTEMA ENCERRADO!");
                     break;
 
                 default:
-                    System.out.println("Opção inválida! Escolha um número entre 1 e 4.");
+                    System.out.println("OPÇÃO INVALIDA! Escolha um número entre 1 e 4.");
             }
         } while (opcao != 4);
 
